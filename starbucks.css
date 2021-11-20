@@ -1,98 +1,279 @@
 @charset "utf-8";
 
 body, html {
-    width: 1200px;
-    height: 100%;
+    width: 100%;
+    margin: auto;
 }
 * {
     margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
-	/*font: inherit;*/
 	vertical-align: baseline;
 	color: black;
+    font: 100%;
 }
-ul, li {
+ul, li , a {
     list-style: none;
+    text-decoration: none;
 }
 div {
     display: block;
   }
 
-/*--메뉴-------------------------------------------*/
-.topbar {
+/*--TOP BAR-------------------------------------------*/
+.header {
+    background-color: #f6f5ef;
     width: 100%;
-    background-color: burlywood;
+    position: fixed;
+    z-index: 1;
+}
+.middle_topbar {
+    display: flex;
+    
 
-
+}
+.topbar {
+    margin: auto;
+    width: 1100px;
+    height: 120px;
+    
 }
 .toplogo {
     padding: 20px;
-    float: left;
+
+}
+.leftlogo {
+    
 }
 .first_nav {
-    background-color: cadetblue;
+    margin-right: 10px;
 }
-.nav1 {  /** topnav 부모 */
-    background-color: chartreuse;
+
+.ul1 {
+    padding-top: 10px;
+    display: flex;
+    justify-content: flex-end;
 }
-.nav1::after {
-    float: none;
-    display: block;
-    content: '';
-    clear: both;
+.ul1 .li1 {
+    padding-right: 25px;
+    font-size: 13px;
+    padding-top: 8px;
+    
 }
-.top_nav {
-    background-color: coral;
-    padding: 2px;
-    float: left;
+.ul1 a {
+    color: #6e6d79;
 }
-.sec_nav {
-    background-color: cornflowerblue;
+/***************************************/
+.rightnav {
+    width: 1080px;
 }
-.rolldown_nav {
-    background-color: salmon;
-}
-.rolldown_nav::after {
-    float: none;
-    display: block;
-    content: '';
-    clear: both;
-}
-.nav2 {
-    background-color: slateblue;
-    float: left;
-    padding: 10px;
-    margin-right: ;
+
+.ul2 {
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 20px;
 }  
-.dropdowna {
-   
+.ul2 a {
+    font-size: 13px;
+    font-weight: lighter;
+}
+.ul2 li {
+    padding: 0px 20px;
+}
+.search_img {
+    background-color: white
+    ;
+    padding: 4.5px;
+    border-radius: 10%;
+    border: 1px solid #bfbfc9;
 }
 
-/*--내용-------------------------------------------*/
+/*--음료----------------------------------------*/
+
+#chris_main {
+    background-image: url();
+    background: #d1131d;
+    height: 646px;
+    background-size: cover;
+    padding-top: 120px;
+    width: 100%;
+    
+}
+.main-drinks_wrap {
+    width: 1100px;
+    margin: auto;
+    height: 646px;
+    
+}
+
+.main-visual {
+    padding-top: 50px;
+    width: 335px;
+    height: 130px;
+    position: absolute;
+
+}
+
+.main-visual_set {
+    display: flex;
+    width: 700px;
+    height: 646px;
+    margin-left: 300px;
+ 
+}
+.set_01 {
+    width: 160px;
+    height: 345px;
+    top: 220px;
+    position: relative;
+}
+.set_02 {
+    width: 430px;
+    height: auto;
+    top: 30px;
+    position: relative;
+}
+.set_03 {
+   
+    width: 430px;
+    height: auto;
+    top: 150px;
+    position: relative;
+}
+.btn_slogan {
+    position: relative;
+    width: 120px;
+    height: 23px;
+    text-align: center;
+    top: 220px;
+    left: 100px;
+    padding-top: 8px;
+    border-radius: 5px;
+    border: 2px solid white;
+}
+.btn_slogan > a {
+    color: white;
+}
 
 
-/*--메뉴소개----------------------------------------*/
 
+/** 뱃지 **/
+.right_fixed {
+    position: absolute;
+    z-index: 1;
+}
+.badge_cont1  img  {
+    left: 1300px;
+    position: fixed;
+    top: 130px;
+    margin: auto;
+}
+.badge_cont2  img  {
+    left: 1300px;
+    margin: auto;
+    position: fixed;
+    top: 230px;
+}
 
-
-/*--공지사항 스르륵-----------------------------------*/
-
-
-
+/*--공지사항-----------------------------------*/
+.bw_bar {
+    background-color: black;
+    height: 62px;
+    width: 100%;
+}
+.blc_whit {
+    width: 1100px;
+    margin: auto;
+    display: flex;
+}
+/**왼**/
+.blc {
+    width: 550px;
+    height: 62px;
+    margin: auto;
+    
+}
+.blc_inner_l {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 270px;
+    padding-top: 23px;
+}
+.blc_inner_l img {
+    padding-right: 30px;
+}
+.blc_inner_l a {
+    padding-left: 10px;
+    color: white;
+}
+/**오**/
+.whi_te {
+    
+    width: 550px;
+    height: 62px;
+}
+.whit_inner_l {
+    padding-left: 280px;
+    padding-top: 23px;
+}
+.whit_inner_l p {
+    color: white;
+    font-size: 20px;
+}
 /*--Starbucks Rewards-----------------------------*/
+.rewards_conts p , h2 , strong {
+    color: white;
+    font-size: 17px;
+}
+.rewards_wrap {
+    background-color: rgb(31, 53, 35);
+    height: 207px;
+    width: 100%;
+}
+.rewards_inner {
+    width: 1100px;
+    margin: auto;
+    display: flex;
+}
+.rewards_logo {
+    padding: 25px 0px 0px 60px;
 
+}
+.rewards_img {
+    width: 175px;
+}
+/**/
+.rewards_conts {
+    width: 835px;
+    height: 207px;
+    background-color: orange;
+    padding-left: 40px;
+}
+.info-cont_txt > h2 {
+    padding-top: 25px;
+    font-size: 26px;
+    background-color: orangered;
+}
 
-
-
-/*--Red Blend Coffe-------------------------------*/
+.info-cont_txt p {
+    background: orchid;
+    margin-top: -10px;
+}
+/**/
+.gift-cont {
+    background: peru;
+}
+/*--Red Blend Coffe-----------
+--------------------*/
 
 
 
 /*--Green Reserve---------------------------------*/
+#goldstar {
+    background-image: url(img/green_reserve.jpg);
+}
 
-
+/*--pick -------------------------*/
 
 
 /*--reserve magazine------------------------------*/

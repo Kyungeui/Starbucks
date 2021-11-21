@@ -29,7 +29,6 @@ div {
 }
 .middle_topbar {
     display: flex;
-    
 
 }
 .topbar {
@@ -97,12 +96,14 @@ div {
     background-size: cover;
     padding-top: 120px;
     width: 100%;
+    display: flex;
     
 }
 .main-drinks_wrap {
-    width: 1100px;
+    width: 1200px;
     margin: auto;
     height: 646px;
+
     
 }
 
@@ -153,72 +154,99 @@ div {
 .btn_slogan > a {
     color: white;
 }
-
+.btn_slogan:hover {
+    transition: background-color .7s, color .7s, border-color .7s;
+    text-decoration: underline;
+    border: 2px solid white;
+    background-color: rgba(255, 255, 255, 0.37);
+    color: white;
+}
 
 
 /** 뱃지 **/
 .right_fixed {
     position: absolute;
-    z-index: 1;
-}
-.badge_cont1  img  {
-    left: 1300px;
+    width: 100%;
     position: fixed;
-    top: 130px;
-    margin: auto;
+    z-index: 4;
 }
-.badge_cont2  img  {
-    left: 1300px;
+.badge_cont1 {
+    width: 140px;
     margin: auto;
-    position: fixed;
-    top: 230px;
+    padding-left: 1050px;
+    padding-top: 15px;
+    z-index: 3;
+}
+.badge_cont2 {
+    margin: auto;
+    width: 140px;
+    padding-left: 1050px;
 }
 
+
 /*--공지사항-----------------------------------*/
-.bw_bar {
-    background-color: black;
+.line_notice {
+    position: relative;
     height: 62px;
     width: 100%;
-}
-.blc_whit {
-    width: 1100px;
-    margin: auto;
-    display: flex;
-}
-/**왼**/
-.blc {
-    width: 550px;
-    height: 62px;
-    margin: auto;
     
 }
-.blc_inner_l {
+.line_notice_left {
+    background-color: #111;
+    width: 50%;
+    height: 62px;
+    position: absolute; 
+}
+.line_notice_right {
+    background-color: #f6f5ef;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 62px;
+    width: 50%;
+}
+.line_notice_bg {
+    margin: auto;
+}
+.line_notice_bgl {
+    height: 62px;
+    width: 50%;    
+}
+.line_notice_inner {
+    height: 36px;
+    margin: auto;
+}
+.line_notice_inner_l {
+    position: relative;
     display: flex;
     justify-content: flex-end;
-    padding-right: 270px;
-    padding-top: 23px;
+    padding-top: 25px;
+    height: 36px;
+    padding-right: 200px;
 }
-.blc_inner_l img {
-    padding-right: 30px;
-}
-.blc_inner_l a {
-    padding-left: 10px;
+.news_result a {
+    padding-left: 50px;
     color: white;
 }
-/**오**/
-.whi_te {
-    
-    width: 550px;
+.news_result a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+/**right**/
+.line_notice_bgr {
     height: 62px;
+    margin: auto;
 }
-.whit_inner_l {
-    padding-left: 280px;
-    padding-top: 23px;
+.line_notice_bgr a {
+    display: block;
+    position: relative;
+    padding-top: 25px;
+    padding-left: 210px;
+    font-size: 18px;
+    font-weight: 900;
 }
-.whit_inner_l p {
-    color: white;
-    font-size: 20px;
-}
+
 /*--Starbucks Rewards-----------------------------*/
 .rewards_conts p , h2 , strong {
     color: white;
@@ -374,6 +402,7 @@ div {
 }
 .btn_bean_detail a:hover {
     color: white;
+    text-decoration: underline;
     border: 2px solid #453d3d;
     background-color: #453d3d;
     transition: background-color .8s, color .8s;
@@ -382,9 +411,10 @@ div {
 /*--Green Reserve---------------------------------*/
 #goldstar {
     background-image: url(img/green_reserve.jpg);
-    background-image: ;
+    background-size: cover;
     width: 100%;
     height: 400px;
+    background-position: center;
 }
 .reserve_inner {
     margin: auto;
@@ -393,10 +423,11 @@ div {
 
 }
 .reserve_title {
-    padding-top: 150px;
+    padding-top: 140px;
+    padding-left: 20px;
 }
 .reserve_detail-btn {
-    padding-left: 370px;
+    padding-left: 380px;
 }
 .reserve_detail-btn > a {
     display: block;
@@ -411,16 +442,13 @@ div {
 }
 .reserve_detail-btn > a:hover {
     transition: background-color .7s, color .7s, border-color .7s;
+    text-decoration: underline;
     border: 2px solid #d5a012;
     background-color: #d5a012;
     color: white;
 }
 /*--pick -----------------------------------------*/
-
-
-/*--reserve magazine------------------------------*/
-
-#favWrap {
+#fav_wrap01 {
     background-image: url(img/fav_prod_bg_new.jpg);
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -428,9 +456,253 @@ div {
     background-size: cover;
     width: 100%;
     height: 800px;
+
+    
+}
+.fav_wrap02 {
+    width: 1100px;
+    margin: auto;
+    height: 650px;
+    display: flex;
+    text-align: right;
+    padding-top: 150px;
+}
+
+/* *왼**/
+.fav_inner01 {
+    width: 500px;
+    padding-right: 40px;
+}
+
+.fav_txt01 {
+    padding-bottom: 40px;
+}
+.fav_txt02 {
+    padding-bottom: 40px;
+    
+}
+.fav_btn {
+    width: 110px;
+    height: 30px;
+    padding-left: 249px;
+}
+.fav_btn a {
+    color: #fff;
+    display: block;
+    font-size: 14px;
+    height: 100%;
+    line-height: 33px;
+    text-align: center;
+    width: 100%;
+    transition: background-color .7s, color .7s;
+    font-size: 15px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background: transparent;
+}
+.fav_btn a:hover {
+    transition: background-color .7s, color .7s, border-color .7s;
+    text-decoration: underline;
+    border: 2px solid white;
+    background-color: white;
+    color: black;
+}
+
+/**오**/
+.fav_img {
+    padding-left: 130px;
 }
 
 
+/*--reserve magazine------------------------------*/
 .reserve_magazine_wrap {
     background-image: url(img/magazine-_line.png);
+    width: 100%;
+    height: 400px;
+    background-position: bottom;
+    background-repeat: no-repeat;
+
+}
+
+
+.magazine_inner01 {
+    width: 1200px;
+    margin: auto;
+}
+.magazine_inner02 {
+    margin-top: 0;
+    height: 400px;
+    margin: auto;
+    display: flex;
+}
+
+/** 왼 **/
+.magazine_title {
+    width: 590px;
+    margin: auto;
+    padding-left: 100px;
+    padding-top: 40px;
+}
+.btn_magazine  {
+    padding-left: 285px;
+    padding-top: 25px;
+}
+
+.btn_magazine a{
+    font-size: 100%;
+    text-decoration: none;
+    color: #000;
+    background: transparent;
+    cursor: pointer;
+    line-height: 39px;
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    border: 2px solid #000;
+    padding: 8px 20px;
+    
+}
+
+.btn_magazine > a:hover {
+    transition: background-color .7s, color .7s, border-color .7s;
+    text-decoration: underline;
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+}
+/** 오 **/
+.magazine_visual {
+    width: 100px;
+    margin: auto;
+    padding-right: 300px;
+    padding-bottom: 20px;
+
+}
+
+/*--Find Store-------------------------*/
+#storeWrap {
+    background-image: url(img/store_bg.jpeg);
+    height: 400px;
+    width: 100%;
+    margin: auto;
+}
+.wrap_inner {
+    height: 400px;
+    width: 1200px;
+    margin: auto;
+    display: flex;
+    
+}
+/**왼**/
+.store01 {
+    width: 600px;
+    height: 400px;
+    margin: auto;
+    position: relative;
+    
+}
+.store_img01 {
+    padding-left: 80px;
+
+}
+.store_img02 {
+    position:absolute;
+    margin-left: 300px;
+    bottom: 10px;
+    position: absolute;
+}
+
+
+
+
+.store_img02 {
+
+}
+/**오**/
+.store02 {
+    width: 500px;
+    padding-top: 110px;
+}
+
+.store_btn {
+    padding-top: 25px;
+}
+.store_btn a {
+    font-size: 100%;
+    text-decoration: none;
+    color: #000;
+    background: transparent;
+    cursor: pointer;
+    line-height: 39px;
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    border: 2px solid #000;
+    padding: 6px 25px;
+}
+.store_btn > a:hover {
+    transition: background-color .7s, color .7s, border-color .7s;
+    text-decoration: underline;
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+}
+.smallstore {
+    padding-left: 270px;
+}
+/*--Footer-------------------------*/
+#footer {
+    width: 100%;
+    height: 600px;
+    background-color: yellow;
+    /* background-color:#2C2A29; */   
+    margin: auto;
+}
+.footer_wrap {
+    width: 1200px;
+    margin: auto;
+    background-color: tomato;
+    height: 210px;
+}
+.footer_list {
+    display: flex ;
+    margin: auto;
+}
+
+.footer_ttl {
+    margin: auto;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** awards wrap---------------------------------*/
+
+.footer_awards_wrap {
+    width: 1200px;
+    margin: auto;
+    background-color: darkgreen;
+    height: 100px;
+}
+
+
+
+
+
+/** copyright ---------------------------------*/
+.copyright {
+    background-color: darkmagenta;
+    width: 1200px;
+    margin: auto;
 }

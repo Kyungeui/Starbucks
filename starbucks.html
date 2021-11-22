@@ -45,6 +45,10 @@
                         </li>
                     </ul>
                 </div>
+
+
+
+                <!----00   ------------------------>
                 <div class="sec_nav">
                     <div class="rolldown_nav">
                         <ul class="ul2">
@@ -54,7 +58,7 @@
                                 <h2 class="drop_btn">
                                     <a href="#" >COFFEE</a>
                                 </h2>
-                                <div class="gnb_sub_wrap" style="display: none;">					
+                                <div class="gnb_sub_wrap">					
                                     <div class="gnb_sub">						
                                         <div class="gnb_sub_inner">							
                                             <ul>								
@@ -130,7 +134,7 @@
                                                     <a href="#">리저브를 매장에서 다양하게 즐기는 법</a>
                                                 </li>							
                                             </ul>							
-                                            <ul style="padding-top: 30px; clear: both;">								
+                                            <ul>								
                                                 <li class="gnb_sub_ttl">
                                                     <a href="#">커피 이야기</a>
                                                 </li>								
@@ -178,7 +182,7 @@
                                 <h2 class="drop_btn">
                                     <a href="#" class="">MENU</a>
                                 </h2>
-                                <div class="gnb_sub_wrap" style="display: none;">					
+                                <div class="gnb_sub_wrap">					
                                     <div class="gnb_sub">						
                                         <div class="gnb_sub_inner">							
                                             <ul>								
@@ -312,14 +316,14 @@
                                     <!-- 텍스쳐 bg end -->				
                                 </div>
                                 
-                            <!--03---------------------------------------------------------------------------------->
+                            
                             </li>
                             <!--03---------------------------------------------------------------------------------->
                             <li class="nav03">
                                 <h2 class="drop_btn">
                                     <a href="#" class="">STORE</a>
                                 </h2>
-                                <div class="gnb_sub_wrap" style="display: none;">					
+                                <div class="gnb_sub_wrap">					
                                     <div class="gnb_sub">						
                                         <div class="gnb_sub_inner">							
                                             <ul>								
@@ -374,17 +378,14 @@
                                     </div>					
                                     <!-- 텍스쳐 bg end -->				
                                 </div>
-                            
-
-
-                            <!--04---------------------------------------------------------------------------------->
                             </li>
+
                             <!--04---------------------------------------------------------------------------------->
                             <li class="nav04">
                                 <h2 class="drop_btn">
                                     <a href="#" class="">RESPONSIBILITY</a>
                                 </h2>
-                                <div class="gnb_sub_wrap" style="display: none;">					
+                                <div class="gnb_sub_wrap">					
                                     <div class="gnb_sub">						
                                         <div class="gnb_sub_inner">							
                                             <ul>								
@@ -471,17 +472,16 @@
                                         </div>					
                                     </div>						
                                 </div>
-                            
-                            
-                            
-                            <!--04---------------------------------------------------------------------------------->
                             </li>
+                            
+                            
+                            
                             <!--05---------------------------------------------------------------------------------->
                             <li class="nav05">
                                 <h2 class="drop_btn">
                                     <a href="#" class="">STARBUCKS REWARDS</a>
                                 </h2>
-                                <div class="gnb_sub_wrap" style="display: none;">					
+                                <div class="gnb_sub_wrap">					
                                     <div class="gnb_sub">						
                                         <div class="gnb_sub_inner">							
                                             <ul>								
@@ -571,7 +571,7 @@
                                 <h2 class="drop_btn">
                                     <a href="#" class="">WHAT'S NEW</a>
                                 </h2>
-                                <div class="gnb_sub_wrap" style="display: none;">					
+                                <div class="gnb_sub_wrap">					
                                     <div class="gnb_sub">						
                                         <div class="gnb_sub_inner">							
                                             <ul>								
@@ -739,6 +739,10 @@
                 <div class="line_notice_right"><div class="line_notice_bgr">
                     <a href="#">
                     <p class="prom_ttl">스타벅스 프로모션</p></a>
+                    <a href=".line_notice" class="arrow_down01">
+                        <img src="img/btn_down.png" alt="down-arrow">
+                    </a>
+                    
                 </div>
             </div>
             <div class="line_notice_bg">
@@ -771,7 +775,7 @@
         </section>
 
         <!----Swip image---------------------------->
-        <section class="main_prom_bnr"  style="display: none;">
+        <section class="main_prom_bnr">
             <div class="main_prom_bnr_swiper slider">
                 <div class="bx-wrapper" style="max-width: 100%;">
                     <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 541px;">
@@ -1174,26 +1178,6 @@
         AOS.init();
     </script>
 
-    <script>
-
-    const menuItem = document.querySelectorAll('.nav01');
-
-    for (let menu of menuItem) {
-        menu.addEventListener('mouseover', (e) => {
-            const current = e.currentTarget;
-            const sub = current.querySelector('.gnb_sub_wrap');
-            // scrollHeight는 요소의 크기를 벗어난 만큼의 높이를 의미
-            sub.style.maxHeight = sub.scrollHeight + "px";
-        });
-
-        menu.addEventListener('mouseout', (e) => {
-            const current = e.currentTarget;
-            const sub = current.querySelector('.gnb_sub_wrap');
-            sub.style.maxHeight = null;
-        });
-    }
-    
-        
-    </script>
+    <script></script>
 </body>
 </html>

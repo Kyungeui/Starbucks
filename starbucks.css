@@ -64,10 +64,16 @@ div {
 .ul1 a {
     color: #6e6d79;
 }
-/***************/
+.search_img {
+    background-color: white
+    ;
+    padding: 4.5px;
+    border-radius: 10%;
+    border: 1px solid #bfbfc9;
+}
 .rightnav {
     width: 1080px;
-}
+} 
 
 .ul2 {
     display: flex;
@@ -81,38 +87,27 @@ div {
 .ul2 li {
     padding: 0px 20px;
 }
-.search_img {
-    background-color: white
-    ;
-    padding: 4.5px;
-    border-radius: 10%;
-    border: 1px solid #bfbfc9;
-}
+ */
 /** 메뉴 드롭다운 hover **/
-.drop_btn:hover {
-    background-color: #2c2a29;
-    color: #669900;
-    text-decoration: underline;
-    
-}
+
 .drop_btn {
     padding: 5px 20px 50px 20px;
-}
+} */
 
 
 
 /*--음료----------------------------------------*/
 .ribbon01 {
-    position: absolute;
-    margin-top: 500px;
+  
+   
 }
 .ribbon02{
-    position: absolute;
-    margin-left: 770px;
+   
 }
+
 #chris_main {
     background: #d1131d;
-    height: 645px;
+    height: 650px;
     padding-top: 120px;
     width: 100%;
     display: flex;
@@ -122,6 +117,7 @@ div {
     width: 1100px;
     margin: auto;
     height: 646px;
+    margin-top: -150px;
 }
 
 .main-visual {
@@ -267,6 +263,15 @@ div {
     font-weight: 600;
 }
 
+.arrow_down01 {
+    margin-left: 243px;
+    margin-top: -52px;
+}
+/**-- 서브 칸 ---------------------------*/
+.main_prom_bnr {
+    margin: auto;
+    
+}
 /*--Starbucks Rewards-----------------------------*/
 .rewards_conts p , h2 , strong {
     color: white;

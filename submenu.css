@@ -1,0 +1,25 @@
+@charset "utf-8";
+
+.gnb_sub_wrap {
+    display: block;
+    position: absolute;
+    top: 118px;
+    left: 0;
+    right: 0;
+    background-color: #2c2a29;
+    overflow: hidden;
+    transform: max-height 180ms ease-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

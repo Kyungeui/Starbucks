@@ -7,16 +7,18 @@
     <link rel="stylesheet" href="starbucks.css">
     <link rel="stylesheet" href="submenu.css">
 
-    <!--AOS 라이러 불러오기-->
+    <!--AOS 라이브러리 불러오기-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 
     <title>Starbucks.html</title>
+    <!--페이지 아이콘 삽입-->
     <link rel="icon" href="img/logo.png" type="image/x-icon" />
 </head>
+
 <body>
-    <!--메뉴바------------------------------------------------------------------------------------------>
+    <!--메뉴바------>
     <div class="header">
         <div class="topbar">
             <div class="middle_topbar">
@@ -48,19 +50,19 @@
 
 
 
-                <!----00   ------------------------>
+                <!----메뉴 스르륵---------->
                 <div class="sec_nav">
                     <div class="rolldown_nav">
                         <ul class="ul2">
 
-                            <!--01---------------------------------------------------------------------------------->
+                            <!--01---------------->
                             <li class="nav01">
                                 <h2 class="drop_btn">
                                     <a href="#" >COFFEE</a>
                                 </h2>
                                 <div class="gnb_sub_wrap">					
                                     <div class="gnb_sub">						
-                                        <div class="gnb_sub_inner">							
+                                        <div class="gnb_sub_inner">						
                                             <ul>								
                                                 <li class="gnb_sub_ttl">
                                                     <a href="#">커피</a>
@@ -114,26 +116,7 @@
                                                     <a href="#">모카</a>
                                                 </li>							
                                             </ul>							
-                                            <ul>								
-                                                <li class="gnb_sub_ttl">
-                                                    <a href="#">최상의 커피를 즐기는 법</a>
-                                                </li>								
-                                                <li>
-                                                    <a href="#">커피 프레스</a>
-                                                </li>								
-                                                <li>
-                                                    <a href="#">푸어 오버</a>
-                                                </li>								
-                                                <li>
-                                                    <a href="#">아이스 푸어 오버</a>
-                                                </li>								
-                                                <li>
-                                                    <a href="#">커피 메이커</a>
-                                                </li>								
-                                                <li>
-                                                    <a href="#">리저브를 매장에서 다양하게 즐기는 법</a>
-                                                </li>							
-                                            </ul>							
+						
                                             <ul>								
                                                 <li class="gnb_sub_ttl">
                                                     <a href="#">커피 이야기</a>
@@ -679,15 +662,17 @@
     </div>
 
 
-    <!--크리스마스 음료------------------------------------------------------------------------------->
+    <!--크리스마스 음료--------->
     <div class="container">
         <div id="chris_main">
-            <!--음료소개----------------------------------------------------------------------------------->
+            <!--음료소개--------->
             <div class="main-drinks_wrap" id="mainimg">
+                <!--배경에 리본들-->
                 <img src="img/2021_chiristmas_bg_left.png" alt="ribbon01" class="ribbon01">
                 <img src="img/2021_chiristmas_bg_right.png" alt="ribbon02" class="ribbon02">
                 <div class="main-visual">
-                    <img src="img/the.png" alt="CARRY the MERRY" class="pc-slogan"
+                    <!--data-aos 효과 적용-->
+                    <img src="img/the.png" alt="CARRY the MERRY"
                     data-aos="fade-zoom-in"
                     data-aos-easing="ease-in-sine">
                 </div>
@@ -717,7 +702,7 @@
                     </div>
                 </div>
             </div>
-            <!--뱃지-->
+            <!--오른쪽 상단 뱃지-------->
             <div class="right_fixed">
                 <div class="badge_cont1">
                     <a href="#">
@@ -733,7 +718,8 @@
             </div>
         </div>
         </div>
-        <!--공지사항-------------------------------------------------------------------------->
+
+        <!--공지사항------------------>
         <section class="line_notice">
             <div class="line_notice_left"></div>
                 <div class="line_notice_right"><div class="line_notice_bgr">
@@ -753,6 +739,7 @@
                                 <img src="img/notice_ttl.png" alt="공지사항" >
                             </dt>
                             <dd>
+                                <!--공지사항 내용 바꿈-->
                                 <ul class="news_result">
                                     <li id="bannerList">
                                         <a href="#" id="bannerLink">2021 플래너 쿠폰 3종 유효 기간 연장 안내</a>
@@ -774,8 +761,8 @@
             </div>
         </section>
 
-        <!----Swip image---------------------------->
-        <section class="main_prom_bnr">
+        <!----Swip image----------->
+        <section class="main_prom_bnr" style="display:none;">
             <div class="main_prom_bnr_swiper slider">
                 <div class="bx-wrapper" style="max-width: 100%;">
                     <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 541px;">
@@ -832,7 +819,8 @@
                 <p class="main_nextBtn"><a href="javascript:void(0)"><span class="a11y">다음 프로모션</span></a></p>
             </div>
         </section>
-        <!--Starbucks Rewards---------------------------------------------------------------------------->
+
+        <!--Starbucks Rewards------------>
 		<div class="rewards_wrap">
             <div class="rewards_inner">
                 <div class="rewards_logo">
@@ -875,7 +863,7 @@
             </div>
         </div>	
 
-        <!--Red Blend Coffee---------------------------------------------------------------------------->
+        <!--Red Blend Coffee--------->
         <div id="blendbean_wrap">
             <div class="blendbean_inner">
                 <div class="bean_img_box" >
@@ -901,7 +889,7 @@
             </div>
         </div>
 
-        <!--Green Reserve---------------------------------------------------------------------------->
+        <!--Green Reserve------------->
         <div class="reserve_wrap" id="goldstar">
             <div class="reserve_inner">
                 <div class="reserve_title">
@@ -916,7 +904,7 @@
             </div>
         </div>
 		
-        <!--pick your photo zone--------------------------------------------------------------------------->
+        <!--pick your favorite zone-------------->
         <div id="fav_wrap01" class="">
             <div class="fav_wrap02">
                 <div class="fav_inner01">
@@ -952,7 +940,7 @@
             </div>
         </div>
 
-        <!--reserve magazine----------------------------------------------------------------------->
+        <!--reserve magazine-------------->
         <div class="reserve_magazine_wrap">
             <div class="magazine_inner01">
                 <div class="magazine_inner02">
@@ -973,7 +961,7 @@
             </div>
         </div>
 
-        <!--Find Store------------------------------------------------------------------------------>
+        <!--Find Store------------------>
         <div id="storeWrap">
             <div class="wrap_inner">
                 <div class="store01">
@@ -1020,11 +1008,8 @@
         </div>
     </div>
 
-    <!--footer------------------------------------------------------------------------------------->
-    <!-- <div class="footer">
-    
 
-    </div> -->
+    <!--footer-------------->
     <footer id="footer"> 
         <div class="footer_wrap">
             <div class="footer_list">
@@ -1142,17 +1127,17 @@
                 </div>
             </div>
         </div>
-        <!-- 수상내역 end -->
- 
+
+        <!-- copy right -->
         <aside class="copyright">
-            <a href="#footer" class="mbn" >개인정보처리방침</a>
-            <a href="#footer" class="mbn">영상정보처리기기 운영관리 방침</a>
-            <a href="#footer" class="mbn">홈페이지 이용약관</a>
-            <a href="#footer" class="mbn">위치정보 이용약관</a>
-            <a href="#footer" class="mbn">스타벅스 카드 이용약관</a>
-            <a href="#footer" class="mbn">비회원 이용약관</a>
-            <a href="#footer" class="mbn">My DT Pass 서비스 이용약관</a>
-            <a href="#footer" class="mbn">윤리경영 핫라인</a>
+            <a href="#footer" class="copylist" >개인정보처리방침</a>
+            <a href="#footer" class="copylist">영상정보처리기기 운영관리 방침</a>
+            <a href="#footer" class="copylist">홈페이지 이용약관</a>
+            <a href="#footer" class="copylist">위치정보 이용약관</a>
+            <a href="#footer" class="copylist">스타벅스 카드 이용약관</a>
+            <a href="#footer" class="copylist">비회원 이용약관</a>
+            <a href="#footer" class="copylist">My DT Pass 서비스 이용약관</a>
+            <a href="#footer" class="copylist">윤리경영 핫라인</a>
             <br>
             <div class="foot_btncon">
                 <a class="btned_link" href="#footer">찾아오시는 길</a>
@@ -1172,7 +1157,8 @@
         </aside>
 
     </footer>
-
+    
+    <!--AOS 라이브러리 적용-->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();

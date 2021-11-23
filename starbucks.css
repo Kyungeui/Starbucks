@@ -1,4 +1,6 @@
 @charset "utf-8";
+
+
 /*-- 공통 --*/
 body, html {
     width: 100%;
@@ -68,19 +70,24 @@ div {
     border-radius: 10%;
     border: 1px solid #bfbfc9;
 }
+.li1:hover {
+    text-decoration: ;
+}
+
+
 /* 아래 서브메뉴는 submenu.css */
-
-
 
 
 /*-- 크리스마스 음료칸 --*/
 /* 리본 */
 .ribbon01 {
-  
-   
+   position: absolute;
+   padding-top: 498px;
 }
 .ribbon02{
-   
+   position: absolute;
+   padding-left: 790px;
+   margin-top: -2px;
 }
 /* 크리스마스 음료소개 칸 */
 #chris_main {
@@ -89,13 +96,11 @@ div {
     padding-top: 120px;
     width: 100%;
     display: flex;
-    
 }
 .main-drinks_wrap {
     width: 1100px;
     margin: auto;
     height: 646px;
-    margin-top: -150px;
 }
 
 /* CARRY MERRY */

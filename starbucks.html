@@ -6,15 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="starbucks.css">
     <link rel="stylesheet" href="submenu.css">
+    <!--파비콘-->
+    <link rel="icon" href="img/logo.png">
 
     <!--AOS 라이브러리 불러오기-->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!--아이콘 불러오기-->
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!-- 제이쿼리&슬릭 불러오기 -->
+    <link rel="stylesheet" type="text/css" href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    
+    <script>
+      $(function() {
+        $('.slidergroup').slick();
+        });
+    </script>
 
 
     <title>Starbucks.html</title>
-    <!--페이지 아이콘 삽입-->
-    <link rel="icon" href="img/logo.png" type="image/x-icon" />
+
+    
 </head>
 
 <body>
@@ -160,7 +174,8 @@
                                     <!-- 텍스쳐 bg end -->				
                                 </div>
                             </li>
-                            <!--02---------------------------------------------------------------------------------->
+
+                            <!--02----------------->
                             <li class="nav02" >
                                 <h2 class="drop_btn">
                                     <a href="#" class="">MENU</a>
@@ -301,7 +316,7 @@
                                 
                             
                             </li>
-                            <!--03---------------------------------------------------------------------------------->
+                            <!--03----------------->
                             <li class="nav03">
                                 <h2 class="drop_btn">
                                     <a href="#" class="">STORE</a>
@@ -363,7 +378,7 @@
                                 </div>
                             </li>
 
-                            <!--04---------------------------------------------------------------------------------->
+                            <!--04----------------->
                             <li class="nav04">
                                 <h2 class="drop_btn">
                                     <a href="#" class="">RESPONSIBILITY</a>
@@ -456,10 +471,8 @@
                                     </div>						
                                 </div>
                             </li>
-                            
-                            
-                            
-                            <!--05---------------------------------------------------------------------------------->
+                                            
+                            <!--05----------------->
                             <li class="nav05">
                                 <h2 class="drop_btn">
                                     <a href="#" class="">STARBUCKS REWARDS</a>
@@ -549,7 +562,8 @@
 
                             <!--05---------------------------------------------------------------------------------->
                             </li>
-                            <!--06---------------------------------------------------------------------------------->
+                            
+                            <!--06----------------->
                             <li class="nav06">
                                 <h2 class="drop_btn">
                                     <a href="#" class="">WHAT'S NEW</a>
@@ -667,15 +681,15 @@
         <div id="chris_main">
             <!--음료소개--------->
             <div class="main-drinks_wrap" id="mainimg">
-                <!--배경에 리본들-->
-                <img src="img/2021_chiristmas_bg_left.png" alt="ribbon01" class="ribbon01">
-                <img src="img/2021_chiristmas_bg_right.png" alt="ribbon02" class="ribbon02">
                 <div class="main-visual">
                     <!--data-aos 효과 적용-->
                     <img src="img/the.png" alt="CARRY the MERRY"
                     data-aos="fade-zoom-in"
                     data-aos-easing="ease-in-sine">
                 </div>
+                <!--배경에 리본들-->
+                <img src="img/2021_chiristmas_bg_left.png" alt="ribbon01" class="ribbon01">
+                <img src="img/2021_chiristmas_bg_right.png" alt="ribbon02" class="ribbon02">
                 <div class="btn_slogan" 
                 data-aos="fade-zoom-in"
                 data-aos-easing="ease-in-sine">
@@ -725,7 +739,7 @@
                 <div class="line_notice_right"><div class="line_notice_bgr">
                     <a href="#">
                     <p class="prom_ttl">스타벅스 프로모션</p></a>
-                    <a href=".line_notice" class="arrow_down01">
+                    <a href="#" class="arrow_down01">
                         <img src="img/btn_down.png" alt="down-arrow">
                     </a>
                     
@@ -762,63 +776,24 @@
         </section>
 
         <!----Swip image----------->
-        <section class="main_prom_bnr" style="display:none;">
-            <div class="main_prom_bnr_swiper slider">
-                <div class="bx-wrapper" style="max-width: 100%;">
-                    <div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height: 541px;">
-                        <ul class="main_prom_bxslider" style="width: 515%; position: relative; transition-duration: 0s; transform: translate3d(-2487px, 0px, 0px);">
-                            <li class="bx-clone" style="float: left; list-style: none; position: relative; width: 1100px;">    
-                                <img alt="만원 당 별 적립 이벤트" src="swipimg/goldstar.jpeg">    
-                                <a href="#">자세히 보기</a>
-                            </li>
-                            <li class="" style="float: left; list-style: none; position: relative; width: 1100px;">   
-                                 <img alt="크리스마스1 프로모션" src="swipimg/chris2021.jpeg">    
-                                 <a href="#">자세히 보기</a>
-                            </li>
-                            <li class="" style="float: left; list-style: none; position: relative; width: 1100px;">    
-                                <img alt="10월 21일, 리저브 크리스마스 신규 커피 &amp; 원두 출시" src="swipimg/redchris.jpeg">    
-                                <a href="#">자세히 보기</a>
-                            </li>
-                            
-                        </ul>
-                    </div>
-                    <div class="bx-controls bx-has-controls-direction">
-                        <div class="bx-controls-direction">
-                            <a class="bx-prev" href="">Prev</a>
-                            <a class="bx-next" href="">Next</a>
-                        </div>
-                    </div>
+        <div class="promotion">
+            <section class="slidergroup">
+                <div class="slider01">
+                    <img alt="만원 당 별 적립 이벤트" src="swipimg/goldstar.jpeg">    
+                    <a href="#">자세히 보기</a>
                 </div>
-                <p class="bnr_swiper_left_mask"></p>
-                <p class="bnr_swiper_right_mask"></p>
-
-
-                <div class="main_slider_controller">
-                    <div class="main_slider_controls">
-                        <div class="bx-controls-auto">
-                            <div class="bx-controls-auto-item">
-                                <a class="bx-stop" href="">Stop</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="main_slider_pagers">
-                        <div class="bx-pager bx-default-pager">
-                            <div class="bx-pager-item">
-                                <a href="" data-slide-index="0" class="bx-pager-link">1</a>
-                            </div>
-                            <div class="bx-pager-item">
-                                <a href="" data-slide-index="1" class="bx-pager-link">2</a>
-                            </div>
-                            <div class="bx-pager-item">
-                                <a href="" data-slide-index="2" class="bx-pager-link active">3</a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="slider01">
+                    <img alt="크리스마스1 프로모션" src="swipimg/chris2021.jpeg">    
+                    <a href="#">자세히 보기</a>
+               </li>
                 </div>
-                <p class="main_prevBtn"><a href="javascript:void(0)"><span class="a11y">이전 프로모션</span></a></p>
-                <p class="main_nextBtn"><a href="javascript:void(0)"><span class="a11y">다음 프로모션</span></a></p>
-            </div>
-        </section>
+                <div class="slider01">
+                    <img alt="10월 21일, 리저브 크리스마스 신규 커피 &amp; 원두 출시" src="swipimg/redchris.jpeg">    
+                    <a href="#">자세히 보기</a>
+                </div>
+            </section>
+        </div>
+
 
         <!--Starbucks Rewards------------>
 		<div class="rewards_wrap">

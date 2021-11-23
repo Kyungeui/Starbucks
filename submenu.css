@@ -105,3 +105,77 @@
 .drop_btn a:hover {
     color: rgb(9, 160, 9);
 }
+
+
+
+
+/* 프로모션 구역 *****************/
+.promotion {
+    width: 100%;
+    background-color #f6f5ef;
+}
+.slidergroup {
+    width: 800px;
+    margin: auto;
+}
+.slider01 img {
+    width: 800px;
+}
+.slider01 a {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 7px 0px;
+    margin-left: 360px;
+    padding-left: 12px;
+    margin-right: 340px;
+    border-radius: 5px;
+    border: 2px solid #2c2a29;
+}
+
+
+.slidergroup { 
+    position: relative; 
+    transform: translate(100);
+}
+.slidergroup a {
+    display: block;
+    position: relative;
+}
+.slidergroup button { 
+    position: absolute; 
+    margin: 20px;
+    z-index: 10; 
+    top: 50%; 
+    transform: 
+    translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color:transparent;
+    border: 2px solid rgb(32, 30, 30);
+    cursor: pointer;
+
+}
+.slidergroup button::before {
+    font-family: 'xeicon';
+    color: rgb(2, 2, 2);
+    font-size: 30px;
+} 
+.slidergroup button.slick-prev {
+    left:0;
+    font-size: 0;
+    color: transparent;
+}
+.slidergroup button.slick-prev::before {
+    content: "\e93d";
+    font-family: 'xeicon';
+}
+.slidergroup button.slick-next {
+    right:0;
+    font-size: 0;
+    color: transparent;
+}
+.slidergroup button.slick-next::before {
+    content: "\e940";
+    font-family: 'xeicon'
+}

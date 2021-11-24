@@ -110,20 +110,20 @@
 
 
 /* 프로모션 구역 *****************/
-.promotion {
+#promotion {
     width: 100%;
-    background-color #f6f5ef;
+    background-color: #f6f5ef;
 }
 .slidergroup {
     width: 800px;
     margin: auto;
+    padding: 30px 0px;
 }
 .slider01 img {
     width: 800px;
 }
 .slider01 a {
     margin-top: 20px;
-    margin-bottom: 20px;
     padding: 7px 0px;
     margin-left: 360px;
     padding-left: 12px;
@@ -136,11 +136,13 @@
 .slidergroup { 
     position: relative; 
     transform: translate(100);
+    overflow: hidden;
 }
 .slidergroup a {
     display: block;
     position: relative;
 }
+/* 슬라이드 버튼  */
 .slidergroup button { 
     position: absolute; 
     margin: 20px;
@@ -154,7 +156,6 @@
     background-color:transparent;
     border: 2px solid rgb(32, 30, 30);
     cursor: pointer;
-
 }
 .slidergroup button::before {
     font-family: 'xeicon';
@@ -178,4 +179,10 @@
 .slidergroup button.slick-next::before {
     content: "\e940";
     font-family: 'xeicon'
+}
+
+/* 자세히보기 버튼 hover */
+.slider01 a:hover {
+    text-decoration: underline;
+    font-weight: bold;
 }

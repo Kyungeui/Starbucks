@@ -736,10 +736,11 @@
         <!--공지사항------------------>
         <section class="line_notice">
             <div class="line_notice_left"></div>
-                <div class="line_notice_right"><div class="line_notice_bgr">
-                    <a href="#">
+                <div class="line_notice_right">
+                    <div class="line_notice_bgr">
+                    <a href="javascript:doDisplay();">
                     <p class="prom_ttl">스타벅스 프로모션</p></a>
-                    <a href="#" class="arrow_down01">
+                    <a href="javascript:doDisplay();" class="arrow_down01">
                         <img src="img/btn_down.png" alt="down-arrow">
                     </a>
                     
@@ -776,7 +777,7 @@
         </section>
 
         <!----Swip image----------->
-        <div class="promotion">
+        <div id="promotion">
             <section class="slidergroup">
                 <div class="slider01">
                     <img alt="만원 당 별 적립 이벤트" src="swipimg/goldstar.jpeg">    
@@ -1139,6 +1140,17 @@
         AOS.init();
     </script>
 
-    <script></script>
+    
+    <script>
+        /** 프로모션 클릭해서 사라지고 열고 **/
+        function doDisplay(){
+	        var con = document.getElementById("promotion");
+	        if(con.style.display=='none'){
+		    con.style.display = 'block';
+	        }else{
+		    con.style.display = 'none';
+	        }
+        }
+    </script>
 </body>
 </html>

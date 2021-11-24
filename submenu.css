@@ -178,7 +178,7 @@
 }
 .slidergroup button.slick-next::before {
     content: "\e940";
-    font-family: 'xeicon'
+    font-family: 'xeicon';
 }
 
 /* 자세히보기 버튼 hover */

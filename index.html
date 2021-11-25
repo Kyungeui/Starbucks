@@ -707,7 +707,8 @@
                     <a href="javascript:doDisplay();">
                     <p class="prom_ttl">스타벅스 프로모션</p></a>
                     <a href="javascript:doDisplay();" class="arrow_down01 btnSearch">
-                        <img class="search-on" src="img/btn_down.png" alt="down-arrow">
+                        <img class="off_prom" id="off_prom" src="img/btn_down.png" alt="down-arrow">
+                        <img class="on_prom" id="on_prom" src="img/arrow-up.png" alt="down-arrow" style="display: none;">
                     </a>
                     
                 </div>
@@ -1111,32 +1112,20 @@
 
     
     <script>
-        // Search 버튼 클릭 실행..난왜 안되는걸까 또륵..
-        const search_btn = document.getElementById("");
-        const search_list = document.getElementById("");
-
-        search_btn.addEventListener('click', e => {
-            // e.preventDefault();
-            if (search_list.style.display == 'none') {
-              search_btn.classList.remove('');
-              search_btn.classList.add('');
-              search_list.style.display = 'block';
-            } else {
-              search_list.style.display = 'none';
-              search_btn.classList.remove('');
-              search_btn.classList.add('');
-            }
-        });
-
-
 
         /** 프로모션 클릭해서 사라지고 열고 **/
-        function doDisplay(){
+        function doDisplay() {
+            const off_prom = document.getElementById("off_prom");
+            const on_prom = document.getElementById("on_prom");
 	        var con = document.getElementById("promotion");
-	        if(con.style.display=='none'){
-		    con.style.display = 'block';
-	        }else{
-		    con.style.display = 'none';
+	        if (con.style.display == 'none') {
+                con.style.display = 'block';
+                off_prom.style.display = 'none';
+                on_prom.style.display = 'block';
+	        } else {
+                con.style.display = 'none';
+                off_prom.style.display = 'block';
+                on_prom.style.display = 'none';
 	        }
         }
 

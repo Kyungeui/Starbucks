@@ -297,7 +297,6 @@ div {
     position: relative;
     height: 62px;
     width: 100%;
-    
 }
 /* 공지사항 */
 .line_notice_left {
@@ -459,7 +458,6 @@ div {
     width: 100%;
 }
 .innerbtn {
-    background-color: blueviolet;
     margin-top: -50px;
     margin-left: 345px;
 }
